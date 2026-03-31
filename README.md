@@ -15,7 +15,7 @@ return values:
 `STATUS_ACCESS_DENIED` - ThreadId to thread from another process
 
 so `ZwAlertThreadByThreadId` can be used to alert thread only from current process.
-`ZwAlertThreadByThreadId` make effect only on thread, which wait in `ZwAlertThreadByThreadId`
+`ZwAlertThreadByThreadId` make effect only on thread, which wait in `ZwWaitForAlertByThreadId`
 it have no effect on usual, alertable wait ( `ZwDelayExecution`, `ZwWaitForSingleObject`, etc)
 
 ```
